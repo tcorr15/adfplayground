@@ -1,0 +1,9 @@
+{
+	"name": "thomascorradftest",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "060dc14c-3c66-464e-8732-818b15e4c195",
+		"tenantId": "0fd78a89-8a75-47e9-959a-f183656b3cb0"
+	}
+}
