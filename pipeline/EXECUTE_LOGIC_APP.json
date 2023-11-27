@@ -21,7 +21,7 @@
 					},
 					"method": "POST",
 					"body": {
-						"value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"job_id\": @{variables('JOB_ID')},\n        \"job_status\": @{variables('JOB_STATUS')},\n        \"job_type\": @{variables('JOB_TYPE')}},\n        \"email\": \"thomas.corr@kainos.com\"\n    }\n}",
+						"value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"job_id\": \"@{variables('JOB_ID')}\",\n        \"job_status\": \"@{variables('JOB_STATUS')}\",\n        \"job_type\": \"@{variables('JOB_TYPE')}}\",\n        \"email\": \"thomas.corr@kainos.com\"\n    }\n}",
 						"type": "Expression"
 					}
 				}
