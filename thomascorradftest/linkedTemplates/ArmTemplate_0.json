@@ -391,7 +391,7 @@
 				"typeProperties": {
 					"recurrence": {
 						"frequency": "Minute",
-						"interval": 4,
+						"interval": 1,
 						"startTime": "2023-11-27T13:37:00",
 						"timeZone": "GMT Standard Time"
 					}
