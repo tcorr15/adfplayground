@@ -42,7 +42,8 @@
 					"url": {
 						"value": "@variables('api')",
 						"type": "Expression"
-					}
+					},
+					"method": "GET"
 				}
 			},
 			{
