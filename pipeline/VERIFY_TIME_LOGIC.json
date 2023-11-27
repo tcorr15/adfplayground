@@ -1,0 +1,9 @@
+{
+	"name": "VERIFY_TIME_LOGIC",
+	"properties": {
+		"folder": {
+			"name": "PARTIAL_PIPELINES"
+		},
+		"annotations": []
+	}
+}
