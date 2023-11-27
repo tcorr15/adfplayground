@@ -1,6 +1,21 @@
 {
 	"name": "EXECUTE_API_CALL",
 	"properties": {
+		"activities": [
+			{
+				"name": "EXECUTE_API_CALL_LOGIC",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Api_Call",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
 		"annotations": []
 	}
 }
