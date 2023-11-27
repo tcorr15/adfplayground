@@ -3,18 +3,11 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "EXECUTE_API_CALL",
-					"type": "PipelineReference"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Day",
+				"frequency": "Minute",
 				"interval": 1,
 				"startTime": "2023-11-27T07:30:00",
 				"timeZone": "GMT Standard Time",
