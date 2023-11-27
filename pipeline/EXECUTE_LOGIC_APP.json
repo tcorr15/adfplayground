@@ -1,6 +1,18 @@
 {
 	"name": "EXECUTE_LOGIC_APP",
 	"properties": {
+		"activities": [
+			{
+				"name": "Build_Api",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
 		"folder": {
 			"name": "PARTIAL_PIPELINES"
 		},
