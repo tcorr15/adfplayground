@@ -13,7 +13,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "api",
-					"value": ""
+					"value": {
+						"value": "@concat('https://datausa.io/api/data?drilldowns=Nation&measures=Population&year=', string('2020'))",
+						"type": "Expression"
+					}
 				}
 			},
 			{
@@ -34,12 +37,41 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "@variables('api')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [
+					{
+						"activity": "CallApi",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "outputArray",
+					"value": {
+						"value": "@activity('CallApi').output.pipelineReturnValue",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
 			"api": {
 				"type": "String"
+			},
+			"outputArray": {
+				"type": "Array"
 			}
 		},
 		"folder": {
