@@ -61,7 +61,7 @@
 				"typeProperties": {
 					"variableName": "outputArray",
 					"value": {
-						"value": "@activity('CallApi').output.pipelineReturnValue",
+						"value": "@activity('CallApi').output",
 						"type": "Expression"
 					}
 				}
