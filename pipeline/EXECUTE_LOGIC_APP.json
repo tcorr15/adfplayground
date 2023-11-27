@@ -19,7 +19,11 @@
 						"value": "@variables('api')",
 						"type": "Expression"
 					},
-					"method": "POST"
+					"method": "POST",
+					"body": {
+						"value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"job_id\": {\n            \"@{variables('JOB_ID')}\"\n        },\n        \"job_status\": {\n            \"@{variables('JOB_STATUS')}\"\n        },\n        \"job_type\": {\n            \"@{variables('JOB_TYPE')}\"\n        },\n        \"email\": {\n            \"thomas.corr@kainos.com\"\n        }\n    }\n}",
+						"type": "Expression"
+					}
 				}
 			}
 		],
